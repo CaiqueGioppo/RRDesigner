@@ -1,0 +1,2095 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html,
+body {
+    margin: 0;
+    font-size: 29px;
+    margin: 0;
+
+    /* Alinha ao topo */
+    background-color: #fff6e6;
+    background-image: url(../static/img/Foto\ Início.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /* Move para o centro horizontalmente */
+    transform: translateX(-50%);
+    /* Ajuste para centralizar */
+    background: transparent;
+    overflow-y: auto;
+    width: 644px;
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 9997;
+    text-align: center;
+    /* Centraliza o conteúdo dentro do header */
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.nav-menu {
+    display: flexbox;
+    /* Usa flexbox para alinhas itens horizontalmente */
+    justify-content: center;
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* Remove marcadores de lista */
+    margin-top: 28px;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 29px;
+}
+
+.nav-menu .nav-item {
+    margin: 0 -15px;
+    /* Espaçamento entre itens de navegação */
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: #aaddbb;
+}
+
+#Logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Move para o centro horizontalmente */
+    background: transparent;
+    width: auto;
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 9997;
+}
+
+#Logo .Botao-Logo img {
+    margin: 12px auto;
+    display: block;
+    width: 220px;
+}
+
+#Logo .Botao-Logo {
+    margin-top: 10px;
+    /* Espaço adicional no topo */
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#Logo .Botao-Logo a {
+    margin-right: 40px;
+    /* Espaço entre os ícones */
+    text-decoration: none;
+    color: inherit;
+}
+
+#Logo .Botoes-Logo {
+    font-size: 29px;
+    /* Tamanho dos ícones */
+}
+
+section#Inicial {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section#Inicial h1 {
+    font-size: 3rem;
+    margin-left: 26px;
+}
+
+section#Inicial span {
+    margin-right: 8rem;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    margin-bottom: 140px;
+    margin-left: 29px;
+}
+
+.Barra-branca {
+    background-color: #fff;
+    width: 570px;
+    height: 5px;
+    margin-left: 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Seta {
+    position: fixed;
+    /* Fixa o elemento na posição da tela */
+    bottom: 15px;
+    /* Distância da parte inferior */
+    right: 30px;
+    /* Distância da lateral direita */
+    z-index: 9997;
+    /* Garante que o botão fique no topo */
+    transition: all ease-in-out 0.5s;
+}
+
+#Seta .Seta-Inicio {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o ícone dentro do link */
+    align-items: center;
+    font-size: 45px;
+    /* Tamanho do ícone */
+    color: #87a391;
+    text-decoration: none;
+}
+
+#Seta .Seta-Inicio:hover {
+    color: #355c3f;
+    /* Cor de destaque ao passar o mouse */
+}
+
+#Seta .Seta-Inicio a {
+    margin-right: 0;
+    /* Removido para alinhar corretamente */
+}
+
+.Sobre {
+    display: flex;
+    /* Alinha os elementos lado a lado */
+    align-items: center;
+    /* Centraliza os elementos verticalmente */
+    justify-content: space-between;
+    /* Espaça os elementos uniformemente */
+    background-color: #fff6e6;
+    /* Cor de fundo */
+    padding: 15px;
+    /* Espaçamento interno */
+    box-sizing: border-box;
+    /* Inclui o padding no tamanho total */
+    height: 70vh;
+    /* Faz a seção ocupar a altura da tela */
+    gap: 20px;
+    /* Espaço entre a imagem e o texto */
+    background-size: 90%;
+}
+
+.imagem img {
+    width: 80vh;
+    /* Define a largura da imagem */
+    height: 70%;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Garante que a imagem fique como bloco */
+    /* Remove margens desnecessárias */
+    margin-left: 40px;
+}
+
+.texto {
+    width: 50%;
+    /* Define a largura da área de texto */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    color: #4c463c;
+    /* Cor do texto */
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.texto h1 {
+    font-size: 49px;
+    /* Ajusta o tamanho do título */
+    margin-bottom: 10px;
+    /* Espaçamento abaixo do título */
+}
+
+.texto p {
+    font-size: 35px;
+    /* Ajusta o tamanho do parágrafo */
+    margin-bottom: 20px;
+    /* Espaçamento abaixo do parágrafo */
+    text-align: justify;
+    color: #4c463c;
+}
+
+
+
+
+
+.content {
+    display: none; /* Escondido inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+    z-index: 1000; /* Garantir que o modal esteja no topo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal-inner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+/* Estilização do modal */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal-inner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.btn-saiba-mais {
+    cursor: pointer;
+    display: inline-block;
+    /* Faz o botão se comportar como um bloco em linha */
+    padding: 10px 20px;
+    /* Espaçamento interno do botão */
+    background-color: transparent;
+    /* Cor de fundo do botão */
+    color: #4c463c;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    /* Adiciona bordas arredondadas */
+    font-size: 1em;
+    /* Ajusta o tamanho do texto do botão */
+    border: #87a391 solid;
+    margin-top: 30px;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #87a391;
+    color: #fffaf1;
+    /* Cor ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    #Logo .Botao-Logo img {
+        width: 180px;
+    }
+
+    #Seta .Seta-Inicio {
+        font-size: 35px;
+    }
+}
+
+/* Ainda menor para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    #Logo .Botao-Logo img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #header {
+        left: -644px;
+    }
+
+    i.menu-mobile {
+        display: flex;
+    }
+
+    section#Inicial h1 {
+        font-size: 1.5rem;
+    }
+
+    section#Inicial span#subtitulo {
+        margin-right: 0;
+        font-size: 0.75rem;
+    }
+
+    section#Inicial .Barra-branca {
+        width: 285px;
+        height: 5px;
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    Logo.Botao-Logo a {
+        size: 10px;
+    }
+
+
+    #Seta .Seta-Inicio {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    section#Inicial h1 {
+        font-size: 1.3rem;
+    }
+
+    section#Inicial span#subtitulo {
+        margin-right: 0;
+        font-size: 0.7rem;
+    }
+
+    section#Inicial .Barra-branca {
+        width: 235px;
+        height: 5px;
+        margin-right: 0;
+        font-size: 0.5rem;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    #Logo.Botao-Logo a {
+        size: 10px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .btn-saiba-mais {
+        padding: 6px 9px;
+    }
+
+    .Sobre {
+        height: 65vh;
+        /* Reduz a altura da seção em telas menores */
+        padding: 15px;
+    }
+
+    .imagem img {
+        width: 95%;
+        /* Reduz o tamanho da imagem */
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-left: 40px;
+    }
+
+    .texto {
+        width: 60%;
+        /* Aumenta a largura do texto para preencher melhor o espaço */
+    }
+
+    .texto h1 {
+        font-size: 1.7em;
+        /* Reduz o tamanho do título */
+    }
+
+    .texto p {
+        font-size: 1em;
+        /* Reduz o tamanho do parágrafo */
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn-saiba-mais {
+        padding: 1px 10px;
+        font-size: 0.8em;
+        margin-top: 15px;
+
+    }
+
+    .Sobre {
+        height: 53vh;
+        /* Reduz a altura da seção em telas menores */
+        padding: 15px;
+        gap: 0;
+    }
+
+    .imagem img {
+        width: 60vh;
+        /* Reduz o tamanho da imagem */
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
+
+    .texto {
+        width: 40%;
+        /* Aumenta a largura do texto para preencher melhor o espaço */
+    }
+
+    .texto h1 {
+        font-size: 1.1em;
+        /* Reduz o tamanho do título */
+    }
+
+    .texto p {
+        font-size: 0.7em;
+        /* Reduz o tamanho do parágrafo */
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-saiba-mais {
+        padding: 0.3px 5px;
+        font-size: 0.7em;
+        margin-top: 0;
+
+    }
+
+    .Sobre {
+        height: 40vh;
+        /* Reduz a altura da seção em telas menores */
+        padding: 15px;
+        gap: 0;
+
+    }
+
+    .imagem img {
+        width: 40vh;
+        /* Define a largura da imagem */
+        height: 70%;
+        /* Mantém a proporção da imagem */
+        display: block;
+        /* Garante que a imagem fique como bloco */
+        /* Remove margens desnecessárias */
+        margin-left: 40px;
+        left: 0;
+    }
+
+    .texto {
+        width: 40%;
+        /* Aumenta a largura do texto para preencher melhor o espaço */
+    }
+
+    .texto h1 {
+        font-size: 0.8em;
+        /* Reduz o tamanho do título */
+    }
+
+    .texto p {
+        font-size: 0.5em;
+        margin-bottom: 5px;
+        /* Reduz o tamanho do parágrafo */
+    }
+
+
+
+}
+
+@media (max-width: 425px) {
+    .btn-saiba-mais {
+        padding: 0.3px 3px;
+        font-size: 0.5em;
+        margin-top: 0px;
+        margin-left: 10px;
+
+    }
+
+    .Sobre {
+        width: 100%;
+        height: 25vh;
+        /* Reduz a altura da seção em telas menores */
+        padding: 0;
+        gap: 0;
+
+    }
+
+    .imagem img {
+        width: 28vh;
+        /* Define a largura da imagem */
+        height: 80%;
+        /* Mantém a proporção da imagem */
+        display: block;
+        /* Garante que a imagem fique como bloco */
+        /* Remove margens desnecessárias */
+        margin-left: 20px;
+        left: 0;
+    }
+
+    .texto {
+        width: 100%;
+        /* Aumenta a largura do texto para preencher melhor o espaço */
+        margin-left: 0;
+
+    }
+
+    .texto h1 {
+        font-size: 0.8em;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+
+
+        /* Reduz o tamanho do título */
+    }
+
+    .texto p {
+        font-size: 0.5em;
+        padding: 10px;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        /* Quebra palavras longas */
+        overflow-wrap: break-word;
+        margin-bottom: 0;
+        margin-top: 0px;
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .btn-saiba-mais {
+        padding: 0.3px 2px;
+        font-size: 0.45em;
+        margin-top: 0px;
+        margin-left: 5px;
+        margin-right: 5px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    .imagem img {
+        width: 30vh;
+        /* Define a largura da imagem */
+        height: 100%;
+        /* Mantém a proporção da imagem */
+        display: block;
+        /* Garante que a imagem fique como bloco */
+        /* Remove margens desnecessárias */
+        margin-left: 12px;
+        margin-right: 5px;
+        left: 0;
+    }
+
+
+    .texto h1 {
+        font-size: 0.7em;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-right: 40px;
+
+
+        /* Reduz o tamanho do título */
+    }
+
+    .texto p {
+        font-size: 0.5em;
+        padding: 10px;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        /* Quebra palavras longas */
+        overflow-wrap: break-word;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    .btn-saiba-mais {
+        padding: 0.3px 3px;
+        font-size: 0.5em;
+        margin-top: 0px;
+        margin-left: 10px;
+        margin-right: 40px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .Sobre {
+        width: 70vh;
+        height: 40vh;
+        /* Reduz a altura da seção em telas menores */
+        padding: 0;
+        gap: 0;
+
+    }
+
+    .imagem img {
+        width: 35vh;
+        /* Define a largura da imagem */
+        height: 100%;
+        /* Mantém a proporção da imagem */
+        display: block;
+        /* Garante que a imagem fique como bloco */
+        /* Remove margens desnecessárias */
+        margin-left: 40px;
+        left: 0;
+    }
+
+    .texto {
+        width: 100%;
+        /* Aumenta a largura do texto para preencher melhor o espaço */
+        margin-right: 40px;
+        margin-left: 0;
+
+
+
+    }
+
+    .texto h1 {
+        font-size: 0.7em;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-right: 40px;
+
+
+        /* Reduz o tamanho do título */
+    }
+
+    .texto p {
+        font-size: 0.5em;
+        padding: 10px;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        /* Quebra palavras longas */
+        overflow-wrap: break-word;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+}
+
+.container.swiper {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 57vh;
+}
+
+.lista-carrossel .carrossel-item {
+    list-style: none;
+}
+
+.lista-carrossel .carrossel-item .carrossel-links {
+    user-select: none;
+    width: 90%;
+    height: 40vh;
+    display: block;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px #87a391(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+    background-size: cover;
+    background-position: left bottom;
+    margin-bottom: 2vh;
+    /* Mostra mais a parte de baixo */
+}
+
+.lista-carrossel .carrossel-item .carrossel-links:active {
+    cursor: grabbing;
+}
+
+.lista-carrossel .carrossel-item .carrossel-links:hover {
+    border-color: #87a391;
+}
+
+.lista-carrossel .carrossel-links .carrossel-imagens {
+    width: 100%;
+    height: 90%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.lista-carrossel .carrossel-links .carrossel-titulo {
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: #4c463c;
+    font-weight: 600;
+    display: flex;
+}
+
+.lista-carrossel .carrossel-links {
+    margin-left: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.carrossel {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.swiper-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.carrossel .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #2f523b;
+    margin-top: 5vh;
+}
+
+.swiper-pagination {
+    margin-bottom: 5vh;
+}
+
+.carrossel .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.carrossel .swiper-slide-button {
+    color: #4b7258;
+    font-size: 10px;
+}
+
+.texto-carousel .h1-carousel {
+    font-size: 49px;
+    top: 0;
+    margin: 10px 0 5px;
+    margin-left: 58px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4c463c;
+}
+
+.texto-carousel .h4-carousel {
+    font-size: 35px;
+    font-weight: normal;
+    margin-left: 58px;
+    color: #4c463c;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1440px) {
+    .container.swiper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 55vh;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links h2 {
+        font-size: 17px;
+        margin-bottom: 0;
+        align-items: center;
+        display: flex;
+    }
+
+
+    .texto-carousel .h1-carousel {
+        font-size: 49px;
+        top: 0;
+        margin: 10px 0 5px;
+        margin-left: 58px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #4c463c;
+    }
+
+    .texto-carousel .h4-carousel {
+        font-size: 29px;
+        font-weight: normal;
+        margin-left: 58px;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    .carrossel .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+    }
+
+    #footer p {
+        font-size: 0.8em;
+        /* Tamanho menor */
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .container.swiper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 46vh;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links {
+        width: 90%;
+        height: 32vh;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links h2 {
+        font-size: 14px;
+        margin-bottom: 0;
+        align-items: center;
+        display: flex;
+    }
+
+    .texto-carousel .h1-carousel {
+        font-size: 31px;
+        top: 0;
+        margin: 10px 0 5px;
+        margin-left: 58px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #4c463c;
+    }
+
+    .texto-carousel .h4-carousel {
+        font-size: 20px;
+        font-weight: normal;
+        margin-left: 58px;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    .carrossel .swiper-pagination-bullet {
+        margin-top: 30px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .carrossel .swiper-pagination {
+        margin-top: 30px;
+        height: 10px;
+        width: 10px;
+    }
+
+    #footer p {
+        font-size: 0.7em;
+        /* Tamanho menor */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container.swiper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 45vh;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links {
+        width: 90%;
+        height: 30vh;
+    }
+
+    .carrossel .swiper-slide-button {
+        display: none;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links h2 {
+        font-size: 13px;
+        margin-bottom: 3px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .texto-carousel .h1-carousel {
+        font-size: 31px;
+        top: 0;
+        margin: 10px 0 5px;
+        margin-left: 58px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #4c463c;
+    }
+
+    .texto-carousel .h4-carousel {
+        font-size: 20px;
+        font-weight: normal;
+        margin-left: 58px;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    .carrossel .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+    }
+
+    #footer p {
+        font-size: 0.65em;
+        /* Tamanho menor */
+    }
+
+}
+
+@media (max-width: 425px) {
+    .container.swiper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 40vh;
+        width: 100%;
+
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links {
+
+        width: 90%;
+        height: 27vh;
+    }
+
+    .carrossel .swiper-slide-button {
+        display: none;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links h2 {
+        font-size: 13px;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .texto-carousel .h1-carousel {
+        font-size: 23px;
+        top: 0;
+        margin: 10px 0 5px;
+        margin-left: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #4c463c;
+    }
+
+    .texto-carousel .h4-carousel {
+        font-size: 15px;
+        font-weight: normal;
+        margin-left: 20px;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    .carrossel .swiper-pagination {
+        margin-bottom: 10px;
+        height: 10px;
+        width: 10px;
+
+    }
+
+    #footer p {
+        font-size: 0.45em;
+        /* Tamanho menor */
+    }
+
+}
+
+@media (max-width: 375px) {
+    .container.swiper {
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+
+
+    }
+
+    .carrossel {
+        margin-right: 0;
+        margin-left: 35px;
+        margin-bottom: 10px;
+    }
+
+    .carrossel .carrossel-lista {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+
+    .lista-carrossel .carrossel-item .carrossel-links {
+        width: 80%;
+        height: 27vh;
+        justify-content: center;
+    }
+
+    .carrossel .swiper-slide-button {
+        display: none;
+    }
+
+    .lista-carrossel .carrossel-item .carrossel-links h2 {
+        font-size: 13px;
+        margin-bottom: 0;
+        align-items: center;
+        display: flex;
+    }
+
+    .texto-carousel .h1-carousel {
+        font-size: 20px;
+        top: 0;
+        margin: 10px 0 5px;
+        margin-left: 12px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #4c463c;
+    }
+
+    .texto-carousel .h4-carousel {
+        font-size: 14.5px;
+        font-weight: normal;
+        margin-left: 12px;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    .carrossel .swiper-pagination {
+        margin-bottom: 10px;
+        height: 10px;
+        width: 10px;
+
+    }
+
+    #footer p {
+        font-size: 0.45em;
+        /* Tamanho menor */
+    }
+
+}
+
+.controle {
+    display: flex;
+    /* Coloca os elementos lado a lado */
+    align-items: center;
+    /* Mantém os itens alinhados verticalmente */
+    gap: 20px;
+    /* Espaço entre o mapa e o formulário */
+    flex-wrap: wrap;
+    /* Permite quebra de linha caso a tela seja pequena */
+}
+
+.card {
+    flex: 1;
+    /* Faz o mapa ocupar um espaço proporcional */
+    max-width: 655px;
+    /* Define um tamanho máximo para evitar distorção */
+    margin-left: 58px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container-contatos {
+    flex: 1;
+    /* Faz o formulário ocupar o mesmo espaço do mapa */
+    max-width: 880px;
+    /* Define um tamanho máximo */
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    border: #3131312a 1px solid;
+}
+
+.container-contatos label {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4c463c;
+    margin-bottom: 0;
+}
+
+.container-contatos input::placeholder {
+    font-size: 21px;
+    /* Ajusta o tamanho do texto do placeholder */
+    color: #7c7c7caf;
+    /* Opcional: altera a cor do texto do placeholder */
+}
+
+.container-contatos textarea::placeholder {
+    font-size: 23px;
+    /* Ajusta o tamanho do texto do placeholder */
+    color: #7c7c7caf;
+    /* Opcional: altera a cor do texto do placeholder */
+}
+
+
+
+.btn-contatos {
+    border-radius: 10px;
+    display: inline-block;
+    /* Faz o botão se comportar como um bloco em linha */
+    padding: 5px 30px;
+    /* Espaçamento interno do botão */
+    background-color: transparent;
+    /* Cor de fundo do botão */
+    color: #4c463c;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    /* Adiciona bordas arredondadas */
+    font-size: 22px;
+    /* Ajusta o tamanho do texto do botão */
+    border: #87a391 solid;
+}
+
+.contatos .btn-contatos:hover {
+    background-color: #87a391;
+    color: #fffaf1;
+    /* Cor ao passar o mouse */
+}
+
+.container-contatos input {
+    border-radius: 10px;
+    border: #75757544 1px solid;
+    background-color: transparent;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.container-contatos textarea {
+    font-size: 22px;
+}
+
+#LOCALIZAÇÃO .controle .container-contatos {
+    margin-left: 60px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    bottom: 0;
+}
+
+.contato {
+    background-color: #fff6e6;
+    height: 83vh;
+}
+
+.row {
+    width: 100vh;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+}
+
+#LOCALIZAÇÃO h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 49px;
+    color: #4c463c;
+    padding-right: 0;
+    margin-left: 58px;
+}
+
+#LOCALIZAÇÃO h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #4c463c;
+    padding-right: 0;
+    bottom: 0;
+    font-weight: normal;
+}
+
+#LOCALIZAÇÃO .card {
+    padding: 27px;
+    width: 58vh;
+}
+
+@media (max-width: 1440px) {
+    .container-contatos {
+        flex: 1;
+        /* Faz o formulário ocupar o mesmo espaço do mapa */
+        max-width: 650px;
+        /* Define um tamanho máximo */
+        max-height: 550px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+
+    #LOCALIZAÇÃO .controle .container-contatos {
+        margin-left: 30px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        bottom: 0;
+    }
+
+    .card {
+        flex: 1;
+        /* Faz o mapa ocupar um espaço proporcional */
+        max-width: 600px;
+        /* Define um tamanho máximo para evitar distorção */
+        margin-left: 58px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+
+    iframe {
+        width: 100%;
+        /* Ou um valor fixo, como 800px */
+        height: 500px;
+        /* Ajuste conforme necessário */
+        border: none;
+        /* Remove a borda */
+    }
+
+    .container-contatos label {
+        font-size: 20px;
+        font-weight: 600;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    #LOCALIZAÇÃO h4 {
+        margin: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+        color: #4c463c;
+        padding-right: 0;
+        bottom: 0;
+        font-weight: normal;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .container-contatos {
+        flex: 1;
+        /* Faz o formulário ocupar o mesmo espaço do mapa */
+        max-width: 500px;
+        /* Define um tamanho máximo */
+        max-height: 520px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+
+    #LOCALIZAÇÃO .controle .container-contatos {
+        margin-left: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        bottom: 0;
+    }
+
+    .card {
+        flex: 1;
+        /* Faz o mapa ocupar um espaço proporcional */
+        max-width: 400px;
+        /* Define um tamanho máximo para evitar distorção */
+        margin-left: 58px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    #LOCALIZAÇÃO .card iframe {
+        width: auto;
+        height: 470px;
+    }
+
+    iframe {
+        width: 70%;
+        /* Ou um valor fixo, como 800px */
+        height: 500px;
+        /* Ajuste conforme necessário */
+        border: none;
+        /* Remove a borda */
+    }
+
+    #LOCALIZAÇÃO h2 {
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: 31px;
+        color: #4c463c;
+        padding-right: 0;
+        margin-left: 58px;
+    }
+
+    .container-contatos label {
+        font-size: 17px;
+        font-weight: 600;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    #LOCALIZAÇÃO h4 {
+        margin: 0;
+        margin-bottom: 0;
+        font-size: 24px;
+        color: #4c463c;
+        padding-right: 0;
+        bottom: 0;
+        font-weight: normal;
+    }
+
+    .btn-contatos {
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: inline-block;
+        /* Faz o botão se comportar como um bloco em linha */
+        padding: 3px 25px;
+        /* Espaçamento interno do botão */
+        background-color: transparent;
+        /* Cor de fundo do botão */
+        color: #4c463c;
+        /* Cor do texto do botão */
+        text-decoration: none;
+        /* Remove o sublinhado */
+        /* Adiciona bordas arredondadas */
+        font-size: 18px;
+        /* Ajusta o tamanho do texto do botão */
+        border: #87a391 solid;
+    }
+
+    .container-contatos input {
+        margin-bottom: 5px;
+    }
+
+
+
+
+}
+
+@media (max-width: 768px) {
+    .container-contatos {
+
+        flex: 1;
+        /* Faz o formulário ocupar o mesmo espaço do mapa */
+        width: 100%;
+        /* Define um tamanho máximo */
+        max-height: 370px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+
+    #LOCALIZAÇÃO .controle .container-contatos {
+        margin-left: 0;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        bottom: 0;
+    }
+
+    .card {
+        flex: 1;
+        /* Faz o mapa ocupar um espaço proporcional */
+        max-width: 100%;
+        /* Define um tamanho máximo para evitar distorção */
+        margin-left: 0;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    #LOCALIZAÇÃO .card iframe {
+        width: auto;
+        height: 200px;
+    }
+
+    iframe {
+        width: 100%;
+        /* Ou um valor fixo, como 800px */
+        height: 50px;
+        /* Ajuste conforme necessário */
+        border: none;
+        /* Remove a borda */
+    }
+
+    #LOCALIZAÇÃO h2 {
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: 31px;
+        color: #4c463c;
+        padding-right: 0;
+        margin-left: 58px;
+    }
+
+    .container-contatos label {
+        font-size: 17px;
+        font-weight: 600;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    #LOCALIZAÇÃO h4 {
+        margin: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+        color: #4c463c;
+        padding-right: 0;
+        bottom: 0;
+        font-weight: normal;
+    }
+
+    .btn-contatos {
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: inline-block;
+        /* Faz o botão se comportar como um bloco em linha */
+        padding: 3px 25px;
+        /* Espaçamento interno do botão */
+        background-color: transparent;
+        /* Cor de fundo do botão */
+        color: #4c463c;
+        /* Cor do texto do botão */
+        text-decoration: none;
+        /* Remove o sublinhado */
+        /* Adiciona bordas arredondadas */
+        font-size: 15px;
+        /* Ajusta o tamanho do texto do botão */
+        border: #87a391 solid;
+    }
+
+    .container-contatos input {
+        margin-bottom: 5px;
+        width: 260px;
+    }
+
+
+    .controle {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        /* Sempre um abaixo do outro */
+        align-items: center;
+        /* Centraliza os elementos */
+        gap: 20px;
+        /* Espaço entre o mapa e o formulário */
+    }
+
+    .card,
+    .container-contatos {
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        max-width: 600px;
+        /* Limite para não ficar muito grande */
+        height: 75%;
+    }
+
+    .contatos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* Espaço entre os campos */
+        height: 90vh
+    }
+
+    .contato {
+        background-color: #fff6e6;
+        height: 85vh;
+    }
+
+
+
+    .contatos .campo {
+        flex: 1;
+        /* Campo ocupa o espaço disponível */
+        min-width: 250px;
+        /* Evita que os campos fiquem pequenos demais */
+        height: auto;
+    }
+
+    .contatos textarea {
+        width: 110%;
+        /* Ajuste para largura total do container */
+        max-width: 550px;
+        /* Limita a largura máxima da caixa de mensagem */
+        height: 100px;
+        /* Ajuste na altura da caixa de mensagem */
+        margin-top: 10px;
+        /* Espaçamento superior para separar um pouco dos campos acima */
+    }
+
+
+    .contatos .campo.mensagem {
+        flex: 2;
+        /* Mensagem vai ocupar mais espaço em comparação com os outros campos */
+    }
+
+    #MENSAGEM textarea {
+        height: 100px;
+
+    }
+
+    .container-contatos input::placeholder {
+        font-size: 17px;
+        /* Ajusta o tamanho do texto do placeholder */
+
+    }
+
+    .container-contatos textarea {
+        font-size: 17px;
+    }
+
+    .container-contatos input {
+        font-size: 17px;
+    }
+
+    .container-contatos input::placeholder {
+        font-size: 17px;
+
+    }
+
+    .container-contatos textarea::placeholder {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container-contatos {
+        margin-left: 0px 0px 0px 0px;
+        /* Remove a margem e força a aplicação */
+        flex: 1;
+        /* Faz o formulário ocupar o mesmo espaço do mapa */
+        width: auto;
+        /* Define um tamanho máximo */
+        max-height: 400px;
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 15px;
+        padding-top: 0;
+
+    }
+
+    .container-contatos .campo {
+        height: auto;
+
+    }
+
+    .container-contatos .contatos form {
+        margin: 0;
+    }
+
+    #LOCALIZAÇÃO .controle .container-contatos {
+        margin-left: 0;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    .contato .controle .card {
+
+        flex: 1;
+        /* Faz o mapa ocupar um espaço proporcional */
+        max-width: 40vh;
+        /* Define um tamanho máximo para evitar distorção */
+        margin-left: 0;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+        width: 80%;
+        /* Reduz a largura para 80% do container */
+
+    }
+
+    #LOCALIZAÇÃO .card iframe {
+        width: 33.5vh;
+        height: 200px;
+
+    }
+
+    iframe {
+        width: 100%;
+        /* Ou um valor fixo, como 800px */
+        height: auto;
+        /* Ajuste conforme necessário */
+        border: none;
+        /* Remove a borda */
+    }
+
+    #LOCALIZAÇÃO h2 {
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: 23px;
+        color: #4c463c;
+        padding-right: 0;
+        margin-left: 20px;
+    }
+
+    .container-contatos label {
+        font-size: 17px;
+        font-weight: 600;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    #LOCALIZAÇÃO h4 {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: 17px;
+        color: #4c463c;
+        padding-right: 0;
+        bottom: 0;
+        font-weight: normal;
+    }
+
+    .btn-contatos {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: inline-block;
+        /* Faz o botão se comportar como um bloco em linha */
+        padding: 3px 25px;
+        /* Espaçamento interno do botão */
+        background-color: transparent;
+        /* Cor de fundo do botão */
+        color: #4c463c;
+        /* Cor do texto do botão */
+        text-decoration: none;
+        /* Remove o sublinhado */
+        /* Adiciona bordas arredondadas */
+        font-size: 15px;
+        /* Ajusta o tamanho do texto do botão */
+        border: #87a391 solid;
+    }
+
+    .container-contatos input {
+        margin-bottom: 5px;
+        width: 305px;
+    }
+
+    .controle {
+        margin-left: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        /* Sempre um abaixo do outro */
+        align-items: center;
+        /* Centraliza os elementos */
+        gap: 15px;
+        /* Espaço entre o mapa e o formulário */
+    }
+
+    .card,.container-contatos {
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        max-width: 350px;
+        /* Limite para não ficar muito grande */
+        height: 75%;
+    }
+
+    .contatos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        /* Espaço entre os campos */
+        height: auto;
+    }
+
+    .contatos .campo {
+        flex: 1;
+        /* Campo ocupa o espaço disponível */
+        min-width: 250px;
+        /* Evita que os campos fiquem pequenos demais */
+        height: auto;
+    }
+
+    .contatos .campo.mensagem {
+        flex: 1;
+        /* Campo ocupa o espaço disponível */
+        min-width: 250px;
+        /* Evita que os campos fiquem pequenos demais */
+        height: auto;
+    }
+
+    .contatos textarea {
+        width: 315px;
+        /* Limita a largura máxima da caixa de mensagem */
+        height: 100px;
+        /* Ajuste na altura da caixa de mensagem */
+        margin-top: 10px;
+        /* Espaçamento superior para separar um pouco dos campos acima */
+        
+    }
+
+
+
+
+    #MENSAGEM textarea {
+        height: 100px;
+
+    }
+
+    .container-contatos input::placeholder {
+        font-size: 15px;
+        /* Ajusta o tamanho do texto do placeholder */
+
+    }
+
+    .container-contatos textarea {
+        font-size: 15px;
+    }
+
+    .container-contatos input {
+        font-size: 15px;
+    }
+
+    .container-contatos input::placeholder {
+        font-size: 15px;
+
+    }
+
+    .container-contatos textarea::placeholder {
+        font-size: 15px;
+    }
+
+
+    #footer p {
+        font-size: 15px;
+        /* Tamanho menor */
+    }
+}
+
+@media (max-width: 375px) {
+    .container-contatos {
+        margin-left: 0px 0px 0px 0px;
+        /* Remove a margem e força a aplicação */
+        flex: 1;
+        /* Faz o formulário ocupar o mesmo espaço do mapa */
+        width: auto;
+        /* Define um tamanho máximo */
+        max-height: 400px;
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 15px;
+        padding-top: 0;
+
+    }
+
+    .container-contatos .campo {
+        height: auto;
+
+    }
+
+    .container-contatos .contatos form {
+        margin: 0;
+    }
+
+    #LOCALIZAÇÃO .controle .container-contatos {
+        margin-left: 0;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    .contato .controle .card {
+
+        flex: 1;
+        /* Faz o mapa ocupar um espaço proporcional */
+        max-width: 33vh;
+        /* Define um tamanho máximo para evitar distorção */
+        margin-left: 0;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+        width: 80%;
+        /* Reduz a largura para 80% do container */
+
+    }
+
+    #LOCALIZAÇÃO .card iframe {
+        width: 26.5vh;
+        height: 200px;
+
+    }
+
+    iframe {
+        width: 100%;
+        /* Ou um valor fixo, como 800px */
+        height: auto;
+        /* Ajuste conforme necessário */
+        border: none;
+        /* Remove a borda */
+    }
+
+    #LOCALIZAÇÃO h2 {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: #4c463c;
+        padding-right: 0;
+        margin-left: 12px;
+    }
+
+    .container-contatos label {
+        font-size: 15px;
+        font-weight: 600;
+        color: #4c463c;
+        margin-bottom: 0;
+    }
+
+    #LOCALIZAÇÃO h4 {
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-size: 15px;
+        color: #4c463c;
+        padding-right: 0;
+        bottom: 0;
+        font-weight: normal;
+    }
+
+    .btn-contatos {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: inline-block;
+        /* Faz o botão se comportar como um bloco em linha */
+        padding: 3px 25px;
+        /* Espaçamento interno do botão */
+        background-color: transparent;
+        /* Cor de fundo do botão */
+        color: #4c463c;
+        /* Cor do texto do botão */
+        text-decoration: none;
+        /* Remove o sublinhado */
+        /* Adiciona bordas arredondadas */
+        font-size: 15px;
+        /* Ajusta o tamanho do texto do botão */
+        border: #87a391 solid;
+    }
+
+    .container-contatos input {
+        margin-bottom: 5px;
+        width: 260px;
+    }
+
+    .controle {
+        margin-left: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        /* Sempre um abaixo do outro */
+        align-items: center;
+        /* Centraliza os elementos */
+        gap: 15px;
+        /* Espaço entre o mapa e o formulário */
+    }
+
+    .card,.container-contatos {
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        max-width: 285px;
+        /* Limite para não ficar muito grande */
+        height: 75%;
+    }
+
+    .contatos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+        /* Espaço entre os campos */
+        height: auto;
+    }
+
+    .contatos .campo {
+        flex: 1;
+        /* Campo ocupa o espaço disponível */
+        min-width: 250px;
+        /* Evita que os campos fiquem pequenos demais */
+        height: auto;
+    }
+
+    .contatos .campo.mensagem {
+        flex: 1;
+        /* Campo ocupa o espaço disponível */
+        min-width: 250px;
+        /* Evita que os campos fiquem pequenos demais */
+        height: auto;
+    }
+
+    .contatos textarea {
+        width: 260px;
+        /* Limita a largura máxima da caixa de mensagem */
+        height: 100px;
+        /* Ajuste na altura da caixa de mensagem */
+        margin-top: 10px;
+        /* Espaçamento superior para separar um pouco dos campos acima */
+    }
+
+
+
+
+    #MENSAGEM textarea {
+        height: 100px;
+
+    }
+
+    .container-contatos input::placeholder {
+        font-size: 15px;
+        /* Ajusta o tamanho do texto do placeholder */
+
+    }
+
+    .container-contatos textarea {
+        font-size: 15px;
+    }
+
+    .container-contatos input {
+        font-size: 15px;
+    }
+
+    .container-contatos input::placeholder {
+        font-size: 15px;
+
+    }
+
+    .container-contatos textarea::placeholder {
+        font-size: 15px;
+    }
+
+
+    #footer p {
+        font-size: 15px;
+        /* Tamanho menor */
+    }
+}
+
+
+
+
+#footer {
+    width: auto;
+    height: auto;
+    background-color: #333;
+    /* Fundo escuro */
+    color: #fff;
+    /* Texto branco */
+    padding: 10px;
+    /* Espaçamento interno */
+    font-size: 0.8em;
+    /* Tamanho menor */
+}
+
+#footer a {
+    color: #aaddbb;
+    /* Cor dos links */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao passar o mouse */
+}
+
+#footer ul {
+    margin: 10px 0 0;
+    /* Espaçamento acima da lista */
+    padding: 0;
+    /* Remove preenchimento padrão */
+}
+
+#footer li {
+    display: inline;
+    /* Deixa os itens lado a lado */
+    margin: 0 10px;
+    /* Espaçamento entre os itens */
+}
